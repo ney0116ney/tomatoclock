@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #e3aaaa;
+    padding: 120px 0;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tab {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab.active {
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+}
+
+.tab:hover {
+    background-color: #e66767;
+}
+
+/* Timer Styling */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#timer {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    width: 33%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    #timer {
+        width: 90%;
+    }
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 10px;
+}
+
+#start-button {
+    padding: 10px 30px;
+    font-size: 1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-button:hover {
+    background-color: #45a049;
+}
+
+
+#reset-button {
+    padding: 10px 30px;
+    font-size: 1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reset-button:hover {
+    background-color: #45a049;
+}
+
+#pause-button {
+    padding: 10px 30px;
+    font-size: 1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#stop-button:hover {
+    background-color: #45a049;
+}

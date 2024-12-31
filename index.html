@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>番茄鐘</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script> <!-- 加上 defer 確保JS載入順序正確 -->
+</head>
+<body>
+    <header>
+        <h1>番茄鐘</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><button id="focus-tab" class="tab active" data-active="true">專注時間</button></li>
+            <li><button id="long-break-tab" class="tab" data-active="false">長休息</button></li>
+            <li><button id="short-break-tab" class="tab" data-active="false">短休息</button></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="timer">25:00</div>
+    </main>
+    <footer>
+        <button id="start-button">開始</button>
+        <button id="pause-button">暫停</button>
+        <button id="reset-button">重置</button>
+    </footer>
+</body>
+</html>
